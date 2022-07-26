@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+:root{
+    --clr-main: #FE5E35;
+}
+/* navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 1em auto;
+    overflow: hidden;
+}
+img[alt="logo"]{
+    width: 100px;
+}
+.nav-items{
+    display: flex;
+    padding-left: 11em;
+    
+}
+.nav-item{
+    padding: 1em;
+    font-size: 1.3rem;
+}
+img[alt="actions"]{
+    position: relative;
+    left: 85px;
+}
+.active-item{
+    color: var(--clr-main);
+}
+
+/* intro section */
+.intro-section{
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+
+}
+.right-section{
+    width: 48%;
+    
+}
+img[alt="headphone"]{
+    width: 70%;
+}
+
+.discount{
+    position: absolute;
+    top: 220px;
+    width: 147px;
+    right: 485px;
+
+}
+.discount-content{
+    position: absolute;
+    color: #FFF;
+    top: 260px;
+    right: 522px;
+    
+}
+.discount-content h1{
+    font-size: 2.5rem;
+
+}
+.discount-content h4{
+    font-size: .8em;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.dots{
+    display: flex;
+}
+.dot{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 1.3em;
+    position: relative;
+    left: 217px;
+}
+.yellow-dot{
+    background-color: #FBD104;
+}
+.tomato-dot{
+    background-color: #FE5E35;
+}
+.black-dot{
+    background-color: #000000;
+}
+.action-btn{
+    background-color: var(--clr-main);
+    border: none;
+    color: #fff;
+    padding: .6em 1.5em;
+    border-radius: 40px;
+    margin-right: 1em;
+
+}
+.dots + button{
+    position: relative;
+    top: 30px;
+    left: 235px;
+}
+.headphone-div{
+    position: relative;
+    left: 100px;
+}
+
+/* left section */
+.left-section{
+    width: 50%;
+    margin-top: 2.5em;
+}
+img[alt="circles"]{
+    width: 50px;
+    position: relative;
+    top: 6px;
+    
+}
+.left-section h3 {
+    font-size: 2rem;
+    font-weight: 200;
+
+}
+.left-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+.sub-headlines{
+    margin-left: 3.5em;
+    margin-top: 2em;
+    
+}
+.sub-headline{
+
+    display: flex;
+    align-items: center;
+    padding: .4em;
+    
+}
+
+.text{
+    color: #909090;
+    font-size: .8rem;
+    margin-top: 4em;
+}
+.action-btns{
+    margin-top: 4.1em;
+}
+img[alt="plus"]{
+    background-color: var(--clr-main);
+    border-radius: 50%;
+    width: 23px;
+    padding: 3px;
+    margin-right: 5px;
+}
