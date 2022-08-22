@@ -13,28 +13,36 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 88%;
+    max-width: 88%;
     margin: 1em auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 img[alt="logo"]{
     width: 100px;
 }
 .nav-items{
     display: flex;
-    padding-left: 11em;
-    
+    margin-right: 40%;
 }
 .nav-item{
-    padding: 1em;
+    padding: 3%;
     font-size: 1.3rem;
 }
 img[alt="actions"]{
-    position: relative;
-    left: 85px;
+    position: absolute;
+    right: 10px;
+    z-index: -1;
 }
 .active-item{
     color: var(--clr-main);
+}
+
+
+
+@media (max-width:480px) {
+    img[alt="actions"]{
+        right: -13%;
+    }
 }
 
 /* intro section */
@@ -42,28 +50,37 @@ img[alt="actions"]{
     display: flex;
     width: 88%;
     margin: 0 auto;
+    justify-content: space-between;
 
 }
 .right-section{
-    width: 48%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     
 }
 img[alt="headphone"]{
-    width: 70%;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 
 .discount{
     position: absolute;
-    top: 220px;
-    width: 147px;
-    right: 485px;
+    top: 55%;
+    max-width: 30%;
+    /* right: 485px; */
+
 
 }
 .discount-content{
     position: absolute;
     color: #FFF;
-    top: 260px;
-    right: 522px;
+    top: 60%;
+    left: 4%;
+    justify-content: center;
     
 }
 .discount-content h1{
@@ -80,11 +97,12 @@ img[alt="headphone"]{
     display: flex;
 }
 .dot{
+    border: 1px solid red;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     margin-left: 1.3em;
-    position: relative;
+    /* position: relative; */
     left: 217px;
 }
 .yellow-dot{
@@ -102,17 +120,17 @@ img[alt="headphone"]{
     color: #fff;
     padding: .6em 1.5em;
     border-radius: 40px;
-    margin-right: 1em;
-
+    margin-right: -1em;
+    margin-top: 1em;
 }
 .dots + button{
-    position: relative;
+    /* position: relative; */
     top: 30px;
     left: 235px;
 }
 .headphone-div{
     position: relative;
-    left: 100px;
+    /* left: 100px; */
 }
 
 /* left section */
@@ -157,10 +175,64 @@ img[alt="circles"]{
 .action-btns{
     margin-top: 4.1em;
 }
+
+.action-btn{
+    margin-right: 1em;
+}
+
 img[alt="plus"]{
     background-color: var(--clr-main);
     border-radius: 50%;
     width: 23px;
     padding: 3px;
     margin-right: 5px;
+}
+
+
+@media (max-width:940px) {
+    .nav-items{
+        display: none;
+    }
+
+    nav{
+        max-width: 95%;
+    }
+
+    img[alt="actions"]{
+        right: -6%;
+    }
+
+
+    .discount-content h1{
+        font-size: 1.7rem
+    }
+
+    .discount-content h4{
+        font-size: .5rem;
+    }
+
+    .right-section{
+        width: 60%;
+    }
+
+    .action-btns{
+        margin-top: 1.1em;
+    }
+
+}
+
+
+@media (max-width:670px){
+    .intro-section{
+        flex-direction: column;
+    }
+
+    .left-section{
+        order: 2;
+    }
+
+    .left-section,
+    .right-section{
+        width: 100%;
+    }
 }
