@@ -15,7 +15,6 @@ nav{
     align-items: center;
     max-width: 88%;
     margin: 1em auto;
-    /* overflow: hidden; */
 }
 img[alt="logo"]{
     width: 100px;
@@ -58,20 +57,17 @@ img[alt="actions"]{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     
 }
 img[alt="headphone"]{
     width: 100%;
-    /* margin: 0 auto; */
 }
 
 .discount{
     position: absolute;
     top: 55%;
     max-width: 30%;
-    /* right: 485px; */
 
 
 }
@@ -97,12 +93,10 @@ img[alt="headphone"]{
     display: flex;
 }
 .dot{
-    border: 1px solid red;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     margin-left: 1.3em;
-    /* position: relative; */
     left: 217px;
 }
 .yellow-dot{
@@ -124,16 +118,13 @@ img[alt="headphone"]{
     margin-top: 1em;
 }
 .dots + button{
-    /* position: relative; */
     top: 30px;
     left: 235px;
 }
 .headphone-div{
     position: relative;
-    /* left: 100px; */
 }
 
-/* left section */
 .left-section{
     width: 50%;
     margin-top: 2.5em;
