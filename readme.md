@@ -8,6 +8,6 @@
     - float
     - css custom propertied
 ## Time taken to complete this project
-    - 3 hours
+    - 3 hours + 2 hours (responsiveness)
 
 ![image](project7.png)

@@ -35,8 +35,7 @@ img[alt="actions"]{
 .active-item{
     color: var(--clr-main);
 }
-
-
+  
 
 @media (max-width:480px) {
     img[alt="actions"]{
@@ -185,6 +184,7 @@ img[alt="plus"]{
         display: none;
     }
 
+
     nav{
         max-width: 95%;
     }
@@ -192,6 +192,16 @@ img[alt="plus"]{
     img[alt="actions"]{
         right: -6%;
     }
+    nav::after{
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        display: block;
+        content: '\f0c9';
+        position: absolute;
+        right: 3%;
+        top: 30px;
+      }
+    
 
 
     .discount-content h1{
@@ -214,6 +224,10 @@ img[alt="plus"]{
 
 
 @media (max-width:670px){
+    nav::after{
+        right: 5%;
+    }
+
     .intro-section{
         flex-direction: column;
     }
